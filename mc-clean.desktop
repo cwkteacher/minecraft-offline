@@ -4,4 +4,4 @@ Type=Application
 Icon=/usr/share/pixmaps/minecraft.png
 Name=Clean World
 Comment=Launch Minecraft Server with a Clean world
-Exec=xfce4-terminal -e "bash /home/student/mc-utils/start-clean.sh"
+Exec=xfce4-terminal -e "bash /home/student/minecraft-offline/start-clean.sh"
