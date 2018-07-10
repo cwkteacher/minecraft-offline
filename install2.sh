@@ -17,6 +17,7 @@ mkdir plugins
 cp /home/student/spigot/spigot* spigot.jar
 cp /home/student/minecraft-offline/*.desktop /home/student/Desktop
 cp /home/student/minecraft-offline/blocklycraft.jar /home/student/minecraft/plugins
+cp /home/student/minecraft-offline/SCPerms.jar /home/student/minecraft/plugins
 cp /home/student/minecraft-offline/eula.txt /home/student/minecraft/
 cp /home/student/minecraft-offline/server.properties /home/student/minecraft/
 killall java
