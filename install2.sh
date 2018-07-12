@@ -1,7 +1,6 @@
 #!/bin/bash
 # debugging
 #java -Xmx1G -Xms1G -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar ./spigot.jar
-# move this all to git and do a git pull here to update itself
 cd ~
 rm -rf spigot
 mkdir spigot
@@ -24,5 +23,8 @@ cp ~/minecraft-offline/server.properties .
 cp ~/minecraft-offline/*.yml .
 mkdir -p scriptcraft/modules
 git clone https://github.com/cwkteacher/mo-cwk.git scriptcraft/modules/cwk
+mkdir -p scriptcraft/plugins
+git clone https://github.com/cwkteacher/mo-cwkteacher.git scriptcraft/plugins
+mkdir -p scriptcraft/plugins/student
 killall java
 ~/minecraft-offline/start.sh
