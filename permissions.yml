@@ -1,0 +1,10 @@
+groups:
+    Non-authorize:
+        default: true
+        info:
+            prefix: ''
+            suffix: ''
+            build: true
+        inheritance:
+        permissions:
+            - 'modifyworld.*'

@@ -21,7 +21,7 @@ cp ~/minecraft-offline/blocklycraft.jar plugins
 cp ~/minecraft-offline/SCPerms.jar plugins
 cp ~/minecraft-offline/eula.txt .
 cp ~/minecraft-offline/server.properties .
-# needs testing...
+cp ~/minecraft-offline/*.yml .
 mkdir -p scriptcraft/modules
 git clone https://github.com/cwkteacher/mo-cwk.git scriptcraft/modules/cwk
 killall java
