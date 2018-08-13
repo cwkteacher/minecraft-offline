@@ -24,7 +24,5 @@ cp ~/minecraft-offline/*.yml .
 mkdir -p scriptcraft/modules
 git clone https://github.com/cwkteacher/mo-cwk.git scriptcraft/modules/cwk
 mkdir -p scriptcraft/plugins
-git clone https://github.com/cwkteacher/mo-cwkteacher.git scriptcraft/plugins
-mkdir -p scriptcraft/plugins/student
 killall java
 ~/minecraft-offline/start.sh

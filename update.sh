@@ -9,7 +9,6 @@ cd ~/spigot
 java -jar BuildTools.jar
 cd ~/minecraft/scriptcraft/modules/cwk
 git pull
-cd ~/minecraft/scriptcraft/plugins/mo-cwkteacher
-git pull
+cd ~/minecraft/scriptcraft/plugins/mo-cwkteacher && git pull
 cd ~
 bash
