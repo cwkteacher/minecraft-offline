@@ -10,8 +10,12 @@ rm spigot*.jar
 curl "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar" -o BuildTools.jar
 java -jar BuildTools.jar
 cd ~ && rm -rf minecraft
-# install desktop icons
-cp ~/minecraft-offline/*.desktop ~/Desktop
+
+# install desktop icons on Linux
+if [[ `uname` == 'Linux' ]]; then
+  cp ~/minecraft-offline/*.desktop ~/Desktop
+fi
+
 mkdir minecraft
 cd ~/minecraft
 mkdir plugins
