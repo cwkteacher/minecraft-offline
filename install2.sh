@@ -33,7 +33,8 @@ cd ~/minecraft
 mkdir plugins
 cp ~/spigot/spigot* spigot.jar
 cp ~/minecraft-offline/blocklycraft.jar plugins
-cp ~/minecraft-offline/SCPerms.jar plugins
+#don't add js perms for all users for now
+#cp ~/minecraft-offline/SCPerms.jar plugins
 cp ~/minecraft-offline/eula.txt .
 cp ~/minecraft-offline/server.properties .
 cp ~/minecraft-offline/*.yml .
