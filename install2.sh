@@ -21,12 +21,7 @@ cd ~ && rm -rf minecraft
 
 # install Linux specifics
 if [[ `uname` == 'Linux' ]]; then
-  sudo apt-get --assume-yes install git openjdk-8-jre-headless apt-transport-https
   cp ~/minecraft-offline/*.desktop ~/Desktop
-  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list  
-  sudo apt-get --assume-yes update
-  sudo apt-get --assume-yes install sublime-text
 fi 
 
 mkdir minecraft
