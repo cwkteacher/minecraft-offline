@@ -16,7 +16,7 @@ cd spigot
 rm -f BuildTools.jar
 rm -f spigot*.jar
 curl "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar" -o BuildTools.jar
-java -jar BuildTools.jar
+java -jar BuildTools.jar --rev 1.12.2
 cd ~ && rm -rf minecraft
 
 # install Linux specifics
