@@ -10,6 +10,8 @@ select yn in "Yes" "No"; do
   esac
 done
 cd ~
+#check and install latest version of curl just in case
+sudo apt-get install curl
 rm -rf spigot
 mkdir spigot
 cd spigot
