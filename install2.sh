@@ -21,9 +21,16 @@ curl "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifa
 java -jar BuildTools.jar --rev 1.12.2
 cd ~ && rm -rf minecraft
 
-# install Linux specifics
+# install Linux specifics (Desktop Icons for kids)
 if [[ `uname` == 'Linux' ]]; then
-  cp ~/minecraft-offline/*.desktop ~/Desktop
+	if [ -x "$(command -v xfce4-terminal)" ]; then
+		ehco 'installing desktop icons for XFCE environment'
+		cp ~/minecraft-offline/XFCE-Desktop/*.desktop ~/Desktop
+	fi
+	if [ -x "$(command -v mate-terminal)" ]; then
+		ehco 'installing desktop icons for XFCE environment'
+		cp ~/minecraft-offline/MATE-Desktop/*.desktop ~/Desktop
+	fi
 fi 
 
 mkdir minecraft
