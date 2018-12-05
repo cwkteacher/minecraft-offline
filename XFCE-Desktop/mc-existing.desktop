@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Icon=/usr/share/pixmaps/minecraft.png
+Name=Existing World
+Comment=Launch Minecraft Server with the existing world
+Exec=xfce4-terminal -e "bash /home/student/minecraft-offline/start.sh"
