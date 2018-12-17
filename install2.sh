@@ -25,7 +25,7 @@ cd ~ && rm -rf minecraft
 if [[ `uname` == 'Linux' ]]; then
 	if [ -x "$(command -v xfce4-terminal)" ]; then
 		echo "installing desktop icons for XFCE environment"
-		cp ~/minecraft-offline/XFCE-Desktop/*.desktop ~/Desktop
+		cp ~/minecraft-offline/*.desktop ~/Desktop
 	fi
 	if [ -x "$(command -v mate-terminal)" ]; then
 		echo "installing desktop icons for XFCE environment"
